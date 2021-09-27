@@ -18,10 +18,12 @@ function createFareMultiplier(num){
     }
 }
 
-const fareDoubler = function(num, fn){
-    return 2 * fn(num)
-}
+//function fareDoubler(){
+    const fareDoubler = createFareMultiplier(2);
+  // return testFare();
+//}
+const fareTripler = createFareMultiplier(3);
 
 function selectDifferentDrivers(array, func){
-    
+    return func(array);
 }
